@@ -1,0 +1,177 @@
+{
+    "Create Strategy": {
+        "prefix": [
+            "strat",
+            ":"
+        ],
+        "body": [
+            ":$1 $2 $3"
+        ],
+        "description": "Create a new strategy"
+    },
+    "Repeat": {
+        "prefix": [
+            "repeat"
+        ],
+        "body": [
+            [
+                "repeat $1 $2"
+            ]
+        ],
+        "description": "The repeat function acts similar to a for loop, however the iterable varbiable cannot be accessed. It repeats the code from x, lines above the function y number of times. It should be noted that repeat actions are not additive and not multiplicative."
+    },
+    "Wait": {
+        "prefix": [
+            "wait"
+        ],
+        "body": [
+            [
+                "wait $1"
+            ]
+        ],
+        "description": "This function defines an amount of time, in msec, the robot should delay before continuing with the next action."
+    },
+    "Goto": {
+        "prefix": [
+            "goto"
+        ],
+        "body": [
+            [
+                "goto $1 $2"
+            ]
+        ],
+        "description": "The goto function is used to tell the robot to move to a coordinate on the field (center of the field is (0,0)). This function DOES NOT contain functional pathfinding between points, so the route must be preprogrammed. This function is currently only able to drive the robot from the front, where the front of the robot is the intake side. The timeout parameter is used for goto commands that have a high likelihood of failure, such as asking the robot to goto a goal to score a triball, the robot my never reach the desired location so a timeout is necessary. This function has an accuracy of 10cm."
+    },
+    "Turn": {
+        "prefix": [
+            "turn"
+        ],
+        "body": [
+            [
+                "turn $1"
+            ]
+        ],
+        "description": "This tells the robot to turn to an absolute heading of the field, however this is determined by the team selected, e.g. If the team is red and the robot is instructed to turn to 0°, it will face north, however if the team is blue and 0° is targeted the robot will face nouth. This function has an accuracy of 2°."
+    },
+    "Reverse": {
+        "prefix": [
+            "reverse"
+        ],
+        "body": [
+            [
+                "reverse"
+            ]
+        ],
+        "description": "This function does not have any parameters, only commanding the robot to drive backwards for 500msec. This function is used to back the robot out of goals after scoring a triball."
+    },
+    "Cdrive": {
+        "prefix": [
+            "cDrive"
+        ],
+        "body": [
+            [
+                "cDrive"
+            ]
+        ],
+        "description": "This function simply commands the robot to drive continuously forward. This is not a blocking function"
+    },
+    "Stop": {
+        "prefix": [
+            "stop"
+        ],
+        "body": [
+            [
+                "stop"
+            ]
+        ],
+        "description": "Stops all drivetrain motors"
+    },
+    "Tdrive": {
+        "prefix": [
+            "tDrive"
+        ],
+        "body": [
+            [
+                "tDrive $1 $2"
+            ]
+        ],
+        "description": "This is a time based function that tells the robot to drive at a given speed for a given amount of time in msec. The robot will brake after this time is up., Parameters: time (msec), speed (-127 - 127)"
+    },
+    "Collect": {
+        "prefix": [
+            "collect"
+        ],
+        "body": [
+            [
+                "collect"
+            ]
+        ],
+        "description": "The collect function lowers the intake turns on the intake motors and runs the motors until a triball is detected"
+    },
+    "Expel": {
+        "prefix": [
+            "expel"
+        ],
+        "body": [
+            [
+                "expel"
+            ]
+        ],
+        "description": "This function raises the intake before spinning the intake backwards. NOTE: The intake will continue to spin until the stopIntake command."
+    },
+    "Stopintake": {
+        "prefix": [
+            "stopIntake"
+        ],
+        "body": [
+            [
+                "stopIntake"
+            ]
+        ],
+        "description": "Stops all intake motors regardless of any previous functions."
+    },
+    "Raise": {
+        "prefix": [
+            "raise"
+        ],
+        "body": [
+            [
+                "raise"
+            ]
+        ],
+        "description": "Raises the intake to expose the pushing bar on the robot."
+    },
+    "Lower": {
+        "prefix": [
+            "lower"
+        ],
+        "body": [
+            [
+                "lower"
+            ]
+        ],
+        "description": "Lowers the intake."
+    },
+    "Catacycle": {
+        "prefix": [
+            "cataCycle"
+        ],
+        "body": [
+            [
+                "cataCycle"
+            ]
+        ],
+        "description": "cataCycle completes a series of moves, first it primes the arm before then waiting for a triball to be present for 250msec, before then advancing the motor and launching the arm."
+    },
+    "Cataprime": {
+        "prefix": [
+            "cataPrime"
+        ],
+        "body": [
+            [
+                "cataPrime"
+            ]
+        ],
+        "description": "Pull the catapult back for traversal under the barrier, this is functionally the same as cataCycle without the wait for triball and colour."
+    }
+}

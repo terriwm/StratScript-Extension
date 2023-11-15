@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "StratScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "//.*$"
+				},
+				{
+					"name": "entity.name.function",
+					"match": "\\b(repeat|wait|goto|turn|reverse|cDrive|stop|tDrive|collect|expel|stopIntake|raise|lower|cataCycle|cataPrime|cataStart|cataStop)\\b"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\d+"
+				},
+				{
+					"name": "keyword.operator.arithmetic",
+					"match": "[+\\-*/]"
+				},
+				{
+					"name": "entity.name.class",
+					"match": ":[a-zA-Z0-9]+|end"
+				}
+				
+			]
+		},
+		
+		"strings": {
+			"name": "string.quoted.double.stratscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.stratscript",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "strategies.strats"
+}
+
