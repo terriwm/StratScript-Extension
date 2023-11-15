@@ -20,7 +20,7 @@ The stratscript system itself is not a programming language but a framework for 
 > #### Parameters
 >
 > `autoType` - Whether the strategy is for a game (0) or skills (1)\
-> `useable` - This does not stop the strategy from being selected however if a value of 0 is selected a warning sign will appear no the screen notifying the user not to select this strategy
+> `useable` - This does not stop the strategy from being selected however if a value of 0 is selected a warning sign will appear on the screen notifying the user not to select this strategy
 >
 > #### Usage
 > ```
@@ -63,7 +63,7 @@ The stratscript system itself is not a programming language but a framework for 
 > ```goto 600 -750```
 
 ### ```turn```
-> This tells the robot to turn to an absolute heading of the field, however this is determined by the team selected, e.g. If the team is red and the robot is instructed to turn to 0°, it will face north, however if the team is blue and 0° is targeted the robot will face nouth. This function has an accuracy of 2°.
+> This tells the robot to turn to an absolute heading of the field, however this is determined by the team selected, e.g. If the team is red and the robot is instructed to turn to 0°, it will face north, however if the team is blue and 0° is targeted the robot will face north. This function has an accuracy of 2°.
 > #### Parameters
 > ```heading``` - The absolute heading for the robot to turn to in degrees
 > #### Usage
