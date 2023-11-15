@@ -5,7 +5,9 @@
             ":"
         ],
         "body": [
-            ":$1 $2 $3"
+            ":$1 $2 $3",
+            "$4",
+            "end"
         ],
         "description": "Create a new strategy"
     },

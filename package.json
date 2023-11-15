@@ -18,7 +18,7 @@
     }],
     "grammars": [{
       "language": "stratscript",
-      "scopeName": "strategies.strats",
+      "scopeName": "source.strats",
       "path": "./syntaxes/stratscript.tmLanguage.json"
     }],
     "snippets": [
@@ -27,5 +27,9 @@
         "path": "./snippets.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/terriwm/StratScript-Extension.git"
   }
 }
