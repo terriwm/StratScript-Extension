@@ -2,7 +2,7 @@
   "name": "stratscript-language",
   "displayName": "StratScript Language",
   "description": "Syntax highlighting and autocomplete for 41103T's implementation of StratScript",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.84.0"
   },
