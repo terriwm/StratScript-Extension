@@ -3,10 +3,6 @@
 This is the StratScript extension that enables code autocomplete and syntax highlighting of 41103T's implementation of the StratScript for the Over Under Season
 
 
-### 1.0.0
-
-Initial release
-
 # StratScript Documentation
 
 The stratscript system itself is not a programming language but a framework for reading and interpreting code from an SD card, the functions and their subsequent actions that they complete are entirely customisable by the user. The following is 41103T's current implementation and use of the StratScript system for use in the 2023-24 Vex Over Under season.
@@ -114,3 +110,10 @@ The stratscript system itself is not a programming language but a framework for 
 
 ### Deprecated - ```cataStop```
 > Stop the catapult motor
+
+## Wing
+### ```wingIn```
+> Retracts the piston, retracting the wing
+
+### ```wingOut```
+> Extends the piston, extending the wing

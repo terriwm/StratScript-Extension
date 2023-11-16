@@ -1,3 +1,6 @@
+## v1.0.3
+- Updated for the added wingIn, wingOut functions, including syntax highlighting, autocomplete & Readme
+
 ## v1.0.2
 - Fixed Readme typos
 

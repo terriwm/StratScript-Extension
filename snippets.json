@@ -175,5 +175,27 @@
             ]
         ],
         "description": "Pull the catapult back for traversal under the barrier, this is functionally the same as cataCycle without the wait for triball and colour."
+    },
+    "Wingin": {
+        "prefix": [
+            "wingIn"
+        ],
+        "body": [
+            [
+                "wingIn"
+            ]
+        ],
+        "description": "Retracts the piston, retracting the wing"
+    },
+    "Wingout": {
+        "prefix": [
+            "wingOut"
+        ],
+        "body": [
+            [
+                "wingOut"
+            ]
+        ],
+        "description": "Extends the piston, extending the wing"
     }
 }

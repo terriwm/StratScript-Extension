@@ -18,7 +18,7 @@
 				},
 				{
 					"name": "entity.name.function",
-					"match": "\\b(repeat|wait|goto|turn|reverse|cDrive|stop|tDrive|collect|expel|stopIntake|raise|lower|cataCycle|cataPrime|cataStart|cataStop)\\b"
+					"match": "\\b(repeat|wait|goto|turn|reverse|cDrive|stop|tDrive|collect|expel|stopIntake|raise|lower|cataCycle|cataPrime|cataStart|cataStop|wingIn|wingOut)\\b"
 				},
 				{
 					"name": "constant.numeric",
